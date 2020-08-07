@@ -10,12 +10,12 @@ void swap(int &a, int &b)
 
 /**
   @brief Converts the given array into two partially sorted arrays.
-  @param *array Pointer to array to be sorted.
+  @param array[] Array to be sorted.
   @param low Index of the lower bound.
   @param high Index of the upper bound.
   @return  The index of pivot point dividing the two partially sorted arrays.
  */
-int partition(int *array, int low, int high)
+int partition(int array[], int low, int high)
 {
   int j = low;
   int pivot = array[low];
@@ -33,11 +33,11 @@ int partition(int *array, int low, int high)
 
 /**
   @brief Sorts the given array.
-  @param *array Pointer to array to be sorted.
+  @param array[] Array to be sorted.
   @param low Index of the lower bound.
   @param high Index of the upper bound.
  */
-void quick_sort(int *array, int low, int high)
+void quick_sort(int array[], int low, int high)
 {
   if (low < high)
   {
